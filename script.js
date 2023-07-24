@@ -41,7 +41,7 @@ function getWeatherData(lat,lon) {
 
 getLocation()
 function getLocation() {
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=austin&limit=1&appid='+API_KEY)
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=austin&limit=1&appid='+API_KEY)
     .then(function(res){
         return res.json()
     })
